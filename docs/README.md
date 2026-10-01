@@ -19,6 +19,16 @@
 - [Integraciones y eventos](architecture/integrations.md)
 - [Diagramas](../diagrams/README.md)
 
+### Vista rápida
+
+![Contexto](../diagrams/rendered/01-context.png)
+
+![Componentes](../diagrams/rendered/02-components.png)
+
+![Despliegue](../diagrams/rendered/03-deployment.png)
+
+![Modelo de datos](../diagrams/rendered/04-data-model.png)
+
 ## 3. Producto y experiencia
 
 - [Capacidades retail/hostelería](product/README.md)

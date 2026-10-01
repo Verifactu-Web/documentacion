@@ -20,3 +20,9 @@ API gateway/WAF, servicio API, PostgreSQL, Redis (cache/locks no fiscal), cola d
 ## C4 y despliegue
 
 Los diagramas [C4](../../diagrams/01-context.puml), [componentes](../../diagrams/02-components.puml) y [Kubernetes](../../diagrams/03-deployment.puml) son parte del contrato arquitectónico y se renderizan en CI.
+
+![Contexto del sistema](../../diagrams/rendered/01-context.png)
+
+![Componentes](../../diagrams/rendered/02-components.png)
+
+![Despliegue Kubernetes](../../diagrams/rendered/03-deployment.png)

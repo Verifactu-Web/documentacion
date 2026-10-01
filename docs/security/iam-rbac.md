@@ -22,3 +22,5 @@ Cada tenant tiene memberships independientes, invitaciones con caducidad, estado
 ## Auditoría IAM
 
 Registrar invitación, login, MFA, cambio de rol, exportación, cambio fiscal, apertura/cierre, reembolso, anulación y uso de soporte; conservar actor, motivo, recurso, antes/después permitido, IP aproximada y correlación conforme a privacidad.
+
+![IAM, RBAC y RLS](../../diagrams/rendered/09-iam-rbac.png)

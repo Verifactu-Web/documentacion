@@ -34,3 +34,5 @@ La cadena es por **SIF/obligado tributario**, no por `tenant` de la plataforma. 
 ## Decisión de modalidad
 
 El MVP es **solo VERI*FACTU**: remisión automática, cadena/hash y contingencia. Si se habilita una modalidad no verificable, será un producto/configuración distinta, con firma electrónica de RF/eventos, registro de eventos obligatorio, exportación y comprobaciones de hash/cadena/firma, y nueva declaración responsable y batería de pruebas.
+
+![Flujo de emisión VERI*FACTU](../../diagrams/rendered/05-verifactu.png)

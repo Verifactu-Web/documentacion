@@ -30,6 +30,18 @@ Especificación inicial, en español, para un SaaS comercial de punto de venta, 
 - [ADRs](docs/adr/README.md)
 - [Diagramas PlantUML](diagrams/README.md)
 
+## Galería visible
+
+Los diagramas están incluidos como imágenes renderizadas para que se vean directamente en GitHub; las fuentes editables `.puml` están junto a ellas.
+
+![Contexto del sistema](diagrams/rendered/01-context.png)
+
+![Arquitectura de componentes](diagrams/rendered/02-components.png)
+
+![Despliegue Kubernetes](diagrams/rendered/03-deployment.png)
+
+![Flujo VERI*FACTU](diagrams/rendered/05-verifactu.png)
+
 ## Validación local
 
 ```bash

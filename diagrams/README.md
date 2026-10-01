@@ -1,6 +1,6 @@
 # Diagramas PlantUML
 
-Cada archivo es autónomo para renderizarse offline/CI sin dependencias remotas. Se generan PNG y SVG en `artifacts/diagrams/` durante la validación local; esos artefactos no se versionan por defecto.
+Cada archivo es autónomo para renderizarse offline/CI sin dependencias remotas. Las imágenes PNG renderizadas se versionan en `rendered/` para que GitHub las muestre directamente; la CI vuelve a comprobar que todas se pueden generar.
 
 | Archivo | Cobertura |
 |---|---|
@@ -18,3 +18,35 @@ Cada archivo es autónomo para renderizarse offline/CI sin dependencias remotas.
 | [12-billing](12-billing.puml) | Metering, billing y entitlements |
 
 Los diagramas describen decisiones de arquitectura; no sustituyen la especificación de AEAT ni los contratos OpenAPI.
+
+## Galería completa
+
+### Contexto y plataforma
+
+![Contexto](rendered/01-context.png)
+
+![Componentes](rendered/02-components.png)
+
+![Despliegue](rendered/03-deployment.png)
+
+![Modelo de datos](rendered/04-data-model.png)
+
+### Fiscal y operaciones de venta
+
+![Flujo VERI*FACTU](rendered/05-verifactu.png)
+
+![Venta POS](rendered/06-pos-sale.png)
+
+![Pedido QR y cocina](rendered/07-qr-kitchen.png)
+
+![Impresión](rendered/08-printing.png)
+
+### Seguridad, auditoría y continuidad
+
+![IAM y RBAC](rendered/09-iam-rbac.png)
+
+![Auditoría](rendered/10-audit.png)
+
+![Contingencia](rendered/11-contingency.png)
+
+![Billing y entitlements](rendered/12-billing.png)

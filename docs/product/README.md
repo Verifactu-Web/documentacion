@@ -21,3 +21,5 @@ La comanda/pedido es operativa. Solo el flujo de checkout/expedición produce fa
 ## Híbrido
 
 Un tenant puede activar retail y hostelería por ubicación. Comparten maestro de artículos, clientes e inventario si procede, pero mantienen flujos de mesa, carta y KDS aislados por capacidad.
+
+![Pedido QR, mesero y cocina](../../diagrams/rendered/07-qr-kitchen.png)
