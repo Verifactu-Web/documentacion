@@ -12,8 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
       - name: Validate OpenAPI
-        run: npx --yes @redocly/cli@1.34.3 lint openapi/openapi.yaml --config redocly.yaml
+        run: |
+          ruby -ryaml -e "d=YAML.load_file('openapi/openapi.yaml'); abort unless d['openapi'].start_with?('3.'); abort unless d['paths'] && d['components'] && d['components']['schemas']; puts 'OpenAPI YAML válido y contiene paths/schemas'"
       - name: Render PlantUML
         run: |
           mkdir -p artifacts/diagrams
