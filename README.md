@@ -27,6 +27,7 @@ Especificación inicial, en español, para un SaaS comercial de punto de venta, 
 - [Producto retail/hostelería](docs/product/README.md)
 - [Pricing y unit economics](docs/product/pricing.md)
 - [Plan de pruebas](docs/testing/README.md)
+- [Plan de implementación paso a paso](docs/implementation-plan.md)
 - [ADRs](docs/adr/README.md)
 - [Diagramas PlantUML](diagrams/README.md)
 

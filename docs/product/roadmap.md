@@ -18,3 +18,5 @@
 - privacidad, transferencias internacionales y retención por perfil de cliente.
 
 Mitigación: fiscal advisory board, release gates, entorno de pruebas AEAT, fixtures firmadas, ADR por cambio y no declarar “certificación” sin base.
+
+El plan operativo detallado, con pasos, entregables, gates y criterios de aceptación, está en [Plan de implementación](../implementation-plan.md).

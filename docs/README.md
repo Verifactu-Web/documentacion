@@ -10,6 +10,10 @@
 - [Conservación, auditoría e inmutabilidad](compliance/records-and-retention.md)
 - [Contingencia y continuidad fiscal](compliance/contingency.md)
 
+## Plan de implementación
+
+- [Plan paso a paso, releases, gates y backlog inicial](implementation-plan.md)
+
 ## 2. Arquitectura
 
 - [Vista general](architecture/overview.md)
