@@ -4,6 +4,17 @@ El trabajo está reflejado en el [GitHub Project Verifactu-Web — Plan de imple
 
 El texto descriptivo y los enlaces de cada tarjeta están centralizados en el [catálogo enlazable del Project](project-catalog.md).
 
+## Jerarquía del Project
+
+La vista principal del Project está agrupada por el campo personalizado `Fase`, con doce valores (`F0`–`F11`). Cada grupo contiene:
+
+- una tarjeta de fase que actúa como rollup visible, con el nombre y la estimación global de la fase;
+- sus tarjetas de tarea individuales (`F#-T##`), con descripción, criterio de aceptación, dependencias y enlaces al catálogo y a la documentación relevante.
+
+Esta es una jerarquía de planificación nativa de GitHub Projects: el campo `Fase` proporciona el nivel padre visual y los identificadores `F#-T##` el nivel de tarea. Las tarjetas se mantienen como borradores mientras el alcance se prepara; no se convierten automáticamente en issues públicos ni se usa `Parent issue` para evitar crear una relación de issues que no aporta valor en esta etapa.
+
+La vista agrupada debe conservarse como vista operativa por defecto. Si se modifica, seleccionar `View → Group by → Fase` y guardar la vista. La fuente de verdad del contenido sigue siendo este repositorio, especialmente [project-catalog.md](project-catalog.md) y [task-estimates.md](task-estimates.md).
+
 ## Convención de ítems
 
 `[F#] T#.# · verbo + resultado · Xd F / Yd C`
