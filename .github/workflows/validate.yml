@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate OpenAPI
-        run: npx --yes @redocly/cli@1.34.3 lint openapi/openapi.yaml
+        run: npx --yes @redocly/cli@1.34.3 lint openapi/openapi.yaml --config redocly.yaml
       - name: Render PlantUML
         run: |
           mkdir -p artifacts/diagrams

@@ -1,0 +1,6 @@
+extends:
+  - recommended
+rules:
+  # La API pública evoluciona con problem+json y no fuerza una respuesta 4XX
+  # explícita en cada operación del contrato inicial.
+  operation-4xx-response: off
