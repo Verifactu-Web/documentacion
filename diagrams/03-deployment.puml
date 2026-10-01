@@ -1,0 +1,50 @@
+@startuml
+title Verifactu-Web — despliegue cloud/Kubernetes
+skinparam componentStyle rectangle
+cloud "Internet" as NET
+node "Cloud region / Kubernetes" as K8S {
+  node "namespace edge" {
+    [Ingress + WAF] as ING
+  }
+  node "namespace app" {
+    [API xN] as API
+    [Auth / Tenant] as AUTH
+  }
+  node "namespace workers" {
+    [Fiscal worker xN] as FW
+    [Document worker] as DW
+    [Print worker] as PW
+    [Billing worker] as BW
+  }
+  node "namespace observability" {
+    [Metrics / Logs / Traces] as OBS
+  }
+}
+database "PostgreSQL HA\nRLS + PITR" as PG
+database "Redis HA\ncache/locks" as REDIS
+cloud "Object storage\nversioning + WORM" as S3
+cloud "AEAT endpoints" as AEAT
+node "Tenant device" as DEVICE {
+  [Browser/PWA] as BROWSER
+  [WebSerial or SBC agent] as AGENT
+}
+NET --> ING
+ING --> API
+API --> AUTH
+API --> PG
+API --> REDIS
+API --> S3
+API --> OBS
+API --> FW
+API --> DW
+API --> PW
+API --> BW
+FW --> PG
+FW --> S3
+FW --> AEAT
+DW --> S3
+PW --> DEVICE
+BW --> PG
+BROWSER --> ING
+AGENT --> ING : outbound mTLS
+@enduml

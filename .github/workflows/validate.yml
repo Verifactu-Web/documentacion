@@ -1,0 +1,28 @@
+name: Validate documentation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate OpenAPI
+        uses: redocly/cli-action@v0.20.0
+        with:
+          args: lint openapi/openapi.yaml
+      - name: Render PlantUML
+        uses: grassedge/generate-plantuml-action@v1.5
+        with:
+          path: diagrams
+          message: "ci: render PlantUML"
+      - name: Validate pairs and docs
+        run: |
+          test -s README.md
+          test "$(find diagrams -name '*.puml' | wc -l)" -ge 12
+          for f in diagrams/*.puml; do grep -q '^@startuml' "$f" && grep -q '^@enduml' "$f"; done

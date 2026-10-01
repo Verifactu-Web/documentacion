@@ -1,0 +1,21 @@
+@startuml
+title Billing, metering y entitlements
+participant "Order/Fiscal domain" as D
+queue "Outbox" as O
+participant "Billing meter" as M
+database "Usage ledger" as L
+participant "Entitlement service" as E
+participant "PSP adapter" as PSP
+participant "Admin/POS" as UI
+D -> O : invoice.issued / location.active
+O -> M : evento idempotente
+M -> L : append usage por tenant
+L -> E : evaluar límites y derechos
+E --> UI : allowed / soft limit / blocked
+L -> PSP : invoice/subscription sync
+PSP --> L : payment status
+note right of E
+Nunca borrar RF por impago.
+Mantener export/lectura fiscal.
+end note
+@enduml

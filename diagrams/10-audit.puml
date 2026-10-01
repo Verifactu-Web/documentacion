@@ -1,0 +1,22 @@
+@startuml
+title Auditoría e inmutabilidad
+actor Usuario
+participant API
+database "Business tables" as B
+database "Fiscal records\nappend-only" as F
+database "Audit events\nappend-only" as A
+cloud "Object storage WORM" as W
+participant "Compliance export" as E
+Usuario -> API : operación sensible
+API -> B : transacción de negocio
+API -> F : RF si tiene impacto fiscal
+API -> A : actor, motivo, antes/después, correlation_id
+API -> W : documento, manifest, checksum
+E -> F : exportar RF canónicos
+E -> A : exportar auditoría
+E -> W : verificar checksum/retención
+note right of F
+No UPDATE/DELETE.
+Corrección = nuevo registro.
+end note
+@enduml

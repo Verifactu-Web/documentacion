@@ -1,0 +1,30 @@
+@startuml
+title VERI*FACTU — emisión, cadena, remisión y QR
+autonumber
+actor Cajero
+participant POS
+participant "Orders API" as API
+participant "Fiscal Core" as FIS
+database "PostgreSQL\nappend-only" as DB
+queue "Outbox / cola durable" as Q
+participant "Fiscal worker" as W
+participant AEAT
+participant "Document renderer" as DOC
+Cajero -> POS : confirmar venta
+POS -> API : POST /invoices\nIdempotency-Key
+API -> FIS : congelar snapshot + reservar serie/número
+FIS -> FIS : construir RF alta\nSHA-256 + previous_hash
+FIS -> DB : commit Invoice + RF + outbox
+DB --> API : invoice_id, estado pending
+API --> POS : documento pendiente de remisión
+Q -> W : fiscal.record.created
+W -> AEAT : remitir RF (XML/JSON oficial)
+AEAT --> W : acuse / error
+W -> DB : estado y evidencia de envío
+API -> DOC : render factura + QR tributario
+DOC --> POS : PDF/ESC-POS con QR y leyenda
+note right of FIS
+Nunca UPDATE/DELETE de RF.
+Anulación = nuevo RF vinculado.
+end note
+@enduml

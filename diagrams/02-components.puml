@@ -1,0 +1,50 @@
+@startuml
+title Verifactu-Web — componentes lógicos
+left to right direction
+skinparam componentStyle rectangle
+package "Canales" {
+  [Admin Web] as Admin
+  [POS PWA] as POS
+  [Waiter PWA] as Waiter
+  [Customer QR PWA] as QR
+  [KDS PWA] as KDS
+}
+package "Plataforma" {
+  [API Gateway / WAF] as GW
+  [Identity & Tenant] as IAM
+  [Orders & Payments] as ORD
+  [Catalog & Inventory] as CAT
+  [Fiscal Core] as FIS
+  [Printing / KDS] as PRINT
+  [Billing & Entitlements] as BILL
+  [Audit] as AUD
+  [Outbox / Event Bus] as BUS
+  [Fiscal Submitter] as SUB
+}
+database "PostgreSQL + RLS" as DB
+cloud "Object Storage WORM" as OBJ
+cloud "AEAT" as AEAT
+Admin --> GW
+POS --> GW
+Waiter --> GW
+QR --> GW
+KDS --> GW
+GW --> IAM
+GW --> ORD
+GW --> CAT
+GW --> BILL
+ORD --> FIS
+ORD --> PRINT
+ORD --> AUD
+CAT --> DB
+ORD --> DB
+FIS --> DB
+AUD --> DB
+FIS --> OBJ
+ORD --> BUS
+FIS --> BUS
+BUS --> SUB
+SUB --> AEAT
+BUS --> BILL
+PRINT --> OBJ
+@enduml

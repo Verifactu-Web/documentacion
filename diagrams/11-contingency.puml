@@ -1,0 +1,21 @@
+@startuml
+title Contingencia fiscal y recuperación
+start
+:Venta confirmada;\ngenerar RF + hash + outbox;
+if (¿AEAT disponible?) then (sí)
+  :remitir en línea;
+  if (¿acuse aceptado?) then (sí)
+    :marcar accepted y conciliar;
+  else (no)
+    :reintento transitorio o DLQ;
+  endif
+else (no)
+  :estado pending_contingency;
+  :conservar RF/documento y alertar;
+  :no renumerar ni borrar;
+endif
+:restaurar/reconectar;
+:verificar cadena, outbox y respuestas;
+:reprocesar idempotente;
+stop
+@enduml

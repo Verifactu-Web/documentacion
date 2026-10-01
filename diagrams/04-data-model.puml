@@ -1,0 +1,65 @@
+@startuml
+title Verifactu-Web — modelo de datos conceptual
+hide methods
+hide stereotypes
+entity Tenant {
+  * tenant_id : uuid
+  --
+  name
+  mode : retail|hospitality|hybrid
+}
+entity User {
+  * user_id : uuid
+  email
+}
+entity Membership {
+  * tenant_id : uuid
+  * user_id : uuid
+  role
+}
+entity Location {
+  * location_id : uuid
+  name
+}
+entity Register {
+  * register_id : uuid
+  fiscal_installation_id
+}
+entity Product {
+  * product_id : uuid
+  sku
+  tax_profile
+}
+entity Order {
+  * order_id : uuid
+  status
+  total
+}
+entity Invoice {
+  * invoice_id : uuid
+  series
+  number
+  total
+}
+entity FiscalRecord {
+  * fiscal_record_id : uuid
+  record_type
+  hash_sha256
+  previous_hash
+}
+entity AeatSubmission {
+  * submission_id : uuid
+  status
+  response_code
+}
+Tenant ||--o{ Membership
+User ||--o{ Membership
+Tenant ||--o{ Location
+Location ||--o{ Register
+Tenant ||--o{ Product
+Location ||--o{ Order
+Order ||--o| Invoice
+Invoice ||--|{ FiscalRecord
+FiscalRecord ||--o{ AeatSubmission
+Register }o--o{ FiscalRecord : generates
+@enduml

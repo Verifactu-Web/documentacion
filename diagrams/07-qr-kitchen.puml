@@ -1,0 +1,26 @@
+@startuml
+title Pedido QR — mesa, mesero y cocina
+actor Cliente
+actor Mesero
+participant "Customer PWA" as C
+participant "Waiter PWA" as W
+participant "Orders API" as API
+participant "KDS" as KDS
+participant "Cocina" as KITCH
+database "Mesa + menú + pedido" as DB
+Cliente -> C : escanear QR de mesa
+C -> API : token mesa + menú vigente
+API --> C : carta, alérgenos, disponibilidad
+Cliente -> C : cesta + modificadores + notas
+C -> API : crear pedido
+API -> DB : pedido pendiente de aprobación
+Mesero -> W : revisar/aceptar o editar
+W -> API : confirmar pedido
+API -> KDS : order.confirmed por estación
+KDS -> KITCH : preparar, pausar, listo
+KITCH --> KDS : estado
+KDS -> API : item.ready
+API --> W : estado mesa y cuenta
+Cliente -> C : solicitar cuenta / dividir
+API -> API : checkout y Fiscal Core si se expide factura
+@enduml

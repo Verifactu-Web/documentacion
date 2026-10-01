@@ -1,0 +1,26 @@
+@startuml
+title Impresión — WebSerial y agente SBC
+participant POS
+participant "Print API" as API
+queue "Print queue" as Q
+participant "WebSerial" as SERIAL
+participant "SBC agent" as SBC
+participant "ESC/POS printer" as PRN
+POS -> API : crear print_job(template, artifact)
+API -> Q : job idempotente
+alt navegador compatible
+  Q -> SERIAL : job firmado/limitado
+  SERIAL -> PRN : ESC/POS
+  PRN --> SERIAL : estado
+else cocina / entorno robusto
+  Q -> SBC : outbound mTLS
+  SBC -> PRN : ESC/POS
+  PRN --> SBC : estado
+end
+SERIAL --> API : ack/failure
+SBC --> API : ack/failure
+note right of SBC
+No calcula hash fiscal
+ni comunica con AEAT.
+end note
+@enduml

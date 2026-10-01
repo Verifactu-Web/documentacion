@@ -1,0 +1,24 @@
+@startuml
+title Venta POS — retail y cierre de caja
+actor Cajero
+participant "POS PWA" as POS
+participant "Orders API" as API
+participant "Catalog" as CAT
+participant "Payment adapter" as PAY
+participant "Fiscal Core" as FIS
+participant "Inventory" as INV
+participant "Cash session" as CASH
+Cajero -> POS : escanear/seleccionar artículos
+POS -> CAT : precio, variantes, impuestos
+CAT --> POS : snapshot de línea
+Cajero -> POS : confirmar y cobrar
+POS -> PAY : authorize/capture
+PAY --> POS : payment_id
+POS -> API : confirmar Order
+API -> INV : reservar/descontar stock
+API -> FIS : expedir factura
+FIS --> API : RF + QR + estado AEAT
+API --> POS : recibo / factura
+Cajero -> CASH : apertura, arqueo, cierre
+CASH --> API : cierre conciliado
+@enduml

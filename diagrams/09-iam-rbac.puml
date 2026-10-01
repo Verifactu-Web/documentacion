@@ -1,0 +1,19 @@
+@startuml
+title IAM/RBAC — contexto de tenant y RLS
+actor Usuario
+participant "OIDC / MFA" as IDP
+participant "API gateway" as GW
+participant "Authorization service" as AUTH
+participant "PostgreSQL RLS" as RLS
+database "tenant-scoped tables" as DB
+Usuario -> IDP : login + MFA/step-up
+IDP --> Usuario : token
+Usuario -> GW : Bearer + request
+GW -> AUTH : validar sesión, tenant, scope, ubicación
+AUTH --> GW : allow/deny + context
+GW -> RLS : SET LOCAL app.tenant_id\nSET LOCAL app.user_id
+RLS -> DB : query con policy tenant_id
+DB --> RLS : datos solo del tenant
+RLS --> GW : respuesta
+GW --> Usuario : resultado auditado
+@enduml

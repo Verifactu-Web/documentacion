@@ -1,0 +1,20 @@
+@startuml
+title Verifactu-Web — contexto de sistema
+left to right direction
+skinparam componentStyle rectangle
+actor "Propietario / administrador" as Owner
+actor "Cajero / mesero" as Staff
+actor "Cliente final" as Customer
+rectangle "Verifactu-Web\nSaaS POS + hostelería + retail" as SaaS
+rectangle "AEAT\nVERI*FACTU / cotejo QR" as AEAT
+rectangle "Pasarela de pago" as PSP
+rectangle "Contabilidad / delivery / reservas" as EXT
+rectangle "Impresora ESC-POS\no agente SBC" as PRN
+Owner --> SaaS : configura tenant, catálogo, roles, billing
+Staff --> SaaS : vende, cobra, comanda, cierra caja
+Customer --> SaaS : consulta carta y pide por QR
+SaaS --> AEAT : remite RF y recibe acuses
+SaaS --> PSP : autoriza/captura pagos
+SaaS --> EXT : eventos/adapters
+SaaS --> PRN : factura, comanda y KDS
+@enduml
