@@ -5,7 +5,7 @@ participant API
 database "Business tables" as B
 database "Fiscal records\nappend-only" as F
 database "Audit events\nappend-only" as A
-cloud "Object storage WORM" as W
+participant "Object storage WORM" as W
 participant "Compliance export" as E
 Usuario -> API : operación sensible
 API -> B : transacción de negocio
