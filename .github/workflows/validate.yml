@@ -13,14 +13,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate OpenAPI
-        uses: redocly/cli-action@v0.20.0
-        with:
-          args: lint openapi/openapi.yaml
+        run: npx --yes @redocly/cli@1.34.3 lint openapi/openapi.yaml
       - name: Render PlantUML
-        uses: grassedge/generate-plantuml-action@v1.5
-        with:
-          path: diagrams
-          message: "ci: render PlantUML"
+        run: |
+          mkdir -p artifacts/diagrams
+          docker run --rm \
+            -v "${GITHUB_WORKSPACE}:/workspace" \
+            plantuml/plantuml:1.2025.10 \
+            -Playout=smetana -tpng -o /workspace/artifacts/diagrams /workspace/diagrams
+          test "$(find artifacts/diagrams -name '*.png' | wc -l)" -ge 12
       - name: Validate pairs and docs
         run: |
           test -s README.md
