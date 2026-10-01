@@ -16,6 +16,7 @@
 - [Fase 0 — Gobierno, alcance y equipo](governance/phase-0/README.md)
 - [Catálogo de tareas y estimaciones Codex-first](project/task-estimates.md)
 - [Gobierno del GitHub Project](project/README.md)
+- [Catálogo descriptivo enlazable de fases y tareas](project/project-catalog.md)
 
 ## 2. Arquitectura
 

@@ -30,6 +30,7 @@ Especificación inicial, en español, para un SaaS comercial de punto de venta, 
 - [Plan de implementación paso a paso](docs/implementation-plan.md)
 - [Fase 0 — Gobierno, alcance y equipo](docs/governance/phase-0/README.md)
 - [Estimaciones Codex-first y catálogo del Project](docs/project/task-estimates.md)
+- [Texto y enlaces de cada fase y tarea del Project](docs/project/project-catalog.md)
 - [ADRs](docs/adr/README.md)
 - [Diagramas PlantUML](diagrams/README.md)
 

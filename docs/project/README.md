@@ -2,6 +2,8 @@
 
 El trabajo está reflejado en el [GitHub Project Verifactu-Web — Plan de implementación](https://github.com/orgs/Verifactu-Web/projects/1) y detallado en [task-estimates.md](task-estimates.md). El Project usa tarjetas de borrador para que el backlog pueda evolucionar antes de convertir tareas en issues de repositorio.
 
+El texto descriptivo y los enlaces de cada tarjeta están centralizados en el [catálogo enlazable del Project](project-catalog.md).
+
 ## Convención de ítems
 
 `[F#] T#.# · verbo + resultado · Xd F / Yd C`
@@ -19,4 +21,3 @@ Cada tarea tiene una aceptación verificable, dependencia y una fase. Los rollup
 2. Ajustar el ítem del Project y registrar la razón en un ADR o comentario.
 3. Reestimar al completar cada gate usando datos reales.
 4. Si cambia normativa, abrir una tarea `NORM`, congelar la release afectada y pedir revisión externa.
-
