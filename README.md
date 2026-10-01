@@ -20,6 +20,7 @@ Especificación inicial, en español, para un SaaS comercial de punto de venta, 
 - [Matriz de trazabilidad](docs/compliance/traceability.md)
 - [Flujo fiscal VERI*FACTU](docs/compliance/verifactu.md)
 - [Arquitectura](docs/architecture/overview.md)
+- [Estrategia de repositorios](docs/architecture/repository-strategy.md)
 - [Modelo de datos](docs/architecture/data-model.md)
 - [API REST y OpenAPI](docs/api/README.md) · [`openapi/openapi.yaml`](openapi/openapi.yaml)
 - [Seguridad e IAM/RBAC](docs/security/README.md)
