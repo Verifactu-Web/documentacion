@@ -28,6 +28,8 @@ Especificación inicial, en español, para un SaaS comercial de punto de venta, 
 - [Pricing y unit economics](docs/product/pricing.md)
 - [Plan de pruebas](docs/testing/README.md)
 - [Plan de implementación paso a paso](docs/implementation-plan.md)
+- [Fase 0 — Gobierno, alcance y equipo](docs/governance/phase-0/README.md)
+- [Estimaciones Codex-first y catálogo del Project](docs/project/task-estimates.md)
 - [ADRs](docs/adr/README.md)
 - [Diagramas PlantUML](diagrams/README.md)
 

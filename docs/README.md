@@ -13,6 +13,9 @@
 ## Plan de implementación
 
 - [Plan paso a paso, releases, gates y backlog inicial](implementation-plan.md)
+- [Fase 0 — Gobierno, alcance y equipo](governance/phase-0/README.md)
+- [Catálogo de tareas y estimaciones Codex-first](project/task-estimates.md)
+- [Gobierno del GitHub Project](project/README.md)
 
 ## 2. Arquitectura
 

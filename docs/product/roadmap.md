@@ -20,3 +20,5 @@
 Mitigación: fiscal advisory board, release gates, entorno de pruebas AEAT, fixtures firmadas, ADR por cambio y no declarar “certificación” sin base.
 
 El plan operativo detallado, con pasos, entregables, gates y criterios de aceptación, está en [Plan de implementación](../implementation-plan.md).
+
+El gobierno del arranque, el equipo de fundador único y la consultoría externa están definidos en [Fase 0](../governance/phase-0/README.md). El catálogo completo de tareas y estimaciones Codex-first está en [task-estimates.md](../project/task-estimates.md).
