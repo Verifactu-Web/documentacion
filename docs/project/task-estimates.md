@@ -12,7 +12,7 @@ La estimación no presupone trabajo paralelo: un fundador único mantiene una so
 
 | Fase | Resultado | Fundador | Consultoría | Dependencia principal |
 |---|---|---:|---:|---|
-| F0 | Gobierno, alcance y baseline | 9 d | 7,5 d | Ninguna |
+| F0 | Gobierno, alcance y baseline | 11 d | 8,5 d | Ninguna |
 | F1 | Fundaciones, tenancy y seguridad base | 22 d | 2 d | F0 |
 | F2 | Fiscal core VERI*FACTU | 34 d | 10 d | F0–F1 |
 | F3 | API-first y contratos | 18 d | 1 d | F1–F2 |
@@ -24,7 +24,7 @@ La estimación no presupone trabajo paralelo: un fundador único mantiene una so
 | F9 | Operación, observabilidad y DR | 24 d | 1 d | F1–F8 |
 | F10 | Conformidad, seguridad y piloto | 26 d | 8 d | F2–F9 |
 | F11 | Lanzamiento y mejora continua | 18 d | 2 d | F10 |
-| **Total** |  | **265 d** | **35,5 d** |  |
+| **Total** |  | **267 d** | **36,5 d** |  |
 
 Con 18–22 días efectivos de construcción por mes, el camino hasta un piloto controlado es aproximadamente 9–12 meses. El lanzamiento comercial amplio requiere datos reales, soporte y revisiones; no debe comprometerse solo con esta suma.
 
@@ -41,6 +41,7 @@ Con 18–22 días efectivos de construcción por mes, el camino hasta un piloto 
 | F0-T07 | Capacidad, presupuesto y pricing | 1 | 0,25 | Modelo y escenarios | F0-T02 | M |
 | F0-T08 | Backlog, gates y Project | 1,5 | 0 | Descomposición y estimación | F0-T01 | A |
 | F0-T09 | Gate y evidence pack de piloto | 1 | 1 | Checklist y plantilla | F0-T04 | M |
+| F0-T10 | Gate de aprobación y readiness de piloto | 2 | 1 | Checklist, decisión y paquete de salida | F0-T08,F0-T09 | M |
 | F1-T01 | Monorepo, lint, CI y entornos | 3 | 0 | Scaffolding y workflows | F0 | A |
 | F1-T02 | Identidad, tenant context y RLS | 7 | 0,5 | Migraciones, guards y tests | F1-T01 | M |
 | F1-T03 | Secretos, configuración y auditoría técnica | 4 | 0,5 | Schemas y automatización | F1-T01 | M |
@@ -95,4 +96,3 @@ Con 18–22 días efectivos de construcción por mes, el camino hasta un piloto 
 - Si el resultado generado por Codex requiere más de una ronda de corrección de integración, contar el tiempo real y añadir una prueba de regresión.
 - Toda tarea fiscal con incertidumbre `B` necesita decisión de LGL/TAX antes de pasar a “Ready”.
 - Una reducción de días no permite saltar revisión, pruebas, seguridad, evidencia o aceptación del fundador.
-

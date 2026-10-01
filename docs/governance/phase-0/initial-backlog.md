@@ -15,6 +15,6 @@ Este backlog se refleja como tarjetas en el [GitHub Project de implementación](
 | F0-T07 | Capacidad, presupuesto y pricing inicial | 1 d | 0,25 d | Presupuesto aprobado y reserva |
 | F0-T08 | Backlog, estimaciones y gates | 1,5 d | 0 d | Project completo y DoD |
 | F0-T09 | Gate de piloto y evidence pack | 1 d | 1 d | Checklist Go/No-Go aprobada |
+| F0-T10 | Gate de aprobación y readiness de piloto | 2 d | 1 d | Decisión de salida de Fase 0 registrada |
 
-**Total Fase 0 estimado:** 9 días de fundador + 7,5 días de consultoría, más 30% de reserva. La cifra de calendario depende de la disponibilidad de la consultoría y no debe confundirse con días consecutivos.
-
+**Total Fase 0 estimado:** 11 días de fundador + 8,5 días de consultoría, más 30% de reserva. La cifra de calendario depende de la disponibilidad de la consultoría y no debe confundirse con días consecutivos.
