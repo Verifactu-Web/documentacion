@@ -1,35 +1,37 @@
 # Fuentes oficiales
 
-Consultadas y verificadas a **7 de octubre de 2026**. Se enlaza siempre a la fuente primaria y se conserva el título para facilitar auditoría.
+Consultadas y verificadas a **7 de octubre de 2026**. Se enlaza siempre a la fuente primaria y se distingue expresamente entre **normativa vigente** y **cambios anunciados todavía pendientes de aprobación**.
 
 > **Estado normativo clave (07-10-2026)**
 >
-> - La obligación de adaptación de los sistemas informáticos de facturación (SIF) al RRSIF/VERI*FACTU está **aplazada** por el Real Decreto-ley 15/2025.
-> - **Contribuyentes del Impuesto sobre Sociedades:** obligación desde el **1 de enero de 2027**.
-> - **Resto de obligados tributarios incluidos en el artículo 3.1 del RRSIF:** obligación desde el **1 de julio de 2027**.
-> - El periodo anterior a esas fechas tiene carácter de **pruebas** a efectos de la implantación de VERI*FACTU.
-> - Desde el **6 de octubre de 2026** está en vigor la **Orden HAC/1028/2026**, publicada en el BOE núm. 247 de 5 de octubre, que regula técnicamente la solución pública de facturación electrónica B2B y activa el cómputo de los plazos de aplicación del Real Decreto 238/2026.
-> - VERI*FACTU/RRSIF y factura electrónica B2B son obligaciones relacionadas pero **jurídica y técnicamente distintas**; Verifactu-Web debe soportarlas mediante módulos desacoplados.
+> - **Derecho vigente:** de acuerdo con la modificación introducida por el Real Decreto-ley 15/2025 y con la nota informativa vigente de la AEAT, las entidades que presenten el Impuesto sobre Sociedades deben tener adaptados sus SIF antes del **1 de enero de 2027** y el resto de obligados tributarios antes del **1 de julio de 2027**.
+> - **Cambio anunciado, todavía no aprobado:** el Ministerio de Hacienda comunicó el **5 de octubre de 2026** su intención de aplazar las obligaciones pendientes derivadas del RD 1007/2023 **hasta octubre de 2028**, para alinearlas con la obligatoriedad de la factura electrónica de empresarios y profesionales cuya facturación anual no supere los **8 millones de euros**.
+> - La propia AEAT presenta este anuncio como **“Previsión de ampliación del plazo”**. Hasta que se publique la norma que materialice ese aplazamiento, las fechas de 2027 continúan siendo las jurídicamente vigentes.
+> - El Ministerio también anuncia una futura modificación para aproximar ámbitos de aplicación y determinados aspectos técnicos de VERI*FACTU y factura electrónica, teniendo en cuenta los futuros requisitos de reporte digital derivados de **ViDA**.
+> - Hacienda adelanta que las garantías esenciales del RD 1007/2023 —integridad, conservación, accesibilidad, legibilidad, trazabilidad e inalterabilidad— se mantendrán en términos sustancialmente equivalentes.
+> - VERI*FACTU/RRSIF y factura electrónica B2B siguen siendo, a día de hoy, obligaciones distintas. La convergencia normativa y técnica anunciada todavía no debe tratarse como normativa aprobada.
 
-## Calendario regulatorio vigente
+## Calendario regulatorio
 
-> **Importante:** hay dos calendarios regulatorios distintos y no deben mezclarse:
->
-> 1. **RRSIF / VERI*FACTU** (RD 1007/2023): fechas propias de adaptación del software de facturación.
-> 2. **Factura electrónica B2B** (Ley 18/2022 + RD 238/2026 + Orden HAC/1028/2026): sus plazos empiezan a computarse desde la entrada en vigor de la Orden HAC/1028/2026, el **06-10-2026**.
->
-> La Orden HAC/1028/2026 **no modifica** las fechas de obligatoriedad del RRSIF/VERI*FACTU.
+### 1. RRSIF / VERI*FACTU — normativa vigente
 
-### RRSIF / VERI*FACTU
-
-| Obligación | Sujetos | Fecha límite / efectiva | Fuente |
+| Obligación | Sujetos | Fecha vigente | Fuente |
 |---|---|---:|---|
-| Sistemas informáticos adaptados al RRSIF | Obligados del art. 3.1.a) del RD 1007/2023 (principalmente contribuyentes del Impuesto sobre Sociedades) | **Antes del 01-01-2027** | S3, S6, S7, S17 |
-| Sistemas informáticos operativos conforme al RRSIF | Resto de obligados del art. 3.1 del RD 1007/2023 | **Antes del 01-07-2027** | S3, S6, S7, S17 |
+| Adaptación de los sistemas informáticos de facturación al RRSIF | Entidades que presenten el Impuesto sobre Sociedades | **Antes del 01-01-2027** | S6, S7, S17 |
+| Adaptación de los sistemas informáticos de facturación al RRSIF | Resto de obligados tributarios incluidos en el ámbito del RRSIF | **Antes del 01-07-2027** | S6, S7, S17 |
 
-### Factura electrónica B2B
+> Estas fechas continúan siendo las legalmente vigentes a 07-10-2026.
 
-La Orden HAC/1028/2026 fue publicada el **05-10-2026** y entró en vigor el **06-10-2026**. Esa fecha inicia el cómputo de los plazos de la disposición final octava de la Ley 18/2022 y de las disposiciones transitorias primera a tercera y disposición final cuarta del RD 238/2026.
+### 2. RRSIF / VERI*FACTU — cambio anunciado pendiente de aprobación
+
+| Anuncio | Ámbito anunciado | Fecha prevista | Situación |
+|---|---|---:|---|
+| Aplazamiento de las obligaciones pendientes del RD 1007/2023 | Pymes/autónomos y, según la comunicación ministerial, empresarios y profesionales cuya facturación anual no supere 8 M€ | **Octubre de 2028** | **Previsión oficial; pendiente de norma que la apruebe** |
+| Convergencia posterior de ámbitos y aspectos técnicos | RRSIF / VERI*FACTU + factura electrónica + futuros requisitos ViDA | Sin fecha cerrada | **Anunciada; pendiente de desarrollo normativo** |
+
+### 3. Factura electrónica B2B
+
+La Orden HAC/1028/2026 entró en vigor el **06-10-2026** y activa el cómputo de los plazos propios de la factura electrónica B2B. Este calendario es distinto del RRSIF, aunque el Ministerio ha anunciado su intención de alinearlos parcialmente.
 
 | Obligación | Sujetos | Fecha efectiva | Base normativa |
 |---|---|---:|---|
@@ -46,7 +48,7 @@ La Orden HAC/1028/2026 fue publicada el **05-10-2026** y entró en vigor el **06
 - Para los sujetos con volumen de operaciones **> 8 M€**, durante los **12 meses siguientes al 06-10-2027** las facturas electrónicas deberán acompañarse de un **PDF que asegure su legibilidad**, salvo aceptación voluntaria y expresa del destinatario para recibir únicamente el formato electrónico original. El PDF **no se remite a la SPFE**.
 - Para personas físicas y entidades en régimen de atribución de rentas con volumen de operaciones **≤ 8 M€**, la comunicación de estados de factura tiene carácter voluntario hasta el **06-10-2029**.
 - Los subcontratistas sujetos a FACeB2B disponen de un máximo de **24 meses desde el 06-10-2026** para adaptarse al nuevo sistema, es decir, hasta el **06-10-2028**.
-- La fecha de referencia para todos estos cómputos B2B es la **entrada en vigor de la Orden HAC/1028/2026 (06-10-2026)**, no su fecha de publicación.
+- La fecha de referencia para los cómputos B2B es la **entrada en vigor de la Orden HAC/1028/2026 (06-10-2026)**.
 
 ## Fuentes
 
@@ -58,7 +60,7 @@ La Orden HAC/1028/2026 fue publicada el **05-10-2026** y entró en vigor el **06
 | S4 | [Orden HAC/1177/2024, texto consolidado, BOE](https://www.boe.es/eli/es/o/2024/10/17/hac1177/con) | Especificaciones técnicas/funcionales, registros, hash, firma, QR y leyenda. |
 | S5 | [Real Decreto 254/2025, BOE](https://www.boe.es/eli/es/rd/2025/04/01/254) | Modificó el calendario anterior y determinados artículos del RD 1007/2023; su calendario fue posteriormente ampliado por el RDL 15/2025. |
 | S6 | [Real Decreto-ley 15/2025, de 2 de diciembre, BOE](https://www.boe.es/eli/es/rdl/2025/12/02/15) | **Calendario RRSIF vigente:** 01-01-2027 para contribuyentes del IS y 01-07-2027 para el resto de obligados del art. 3.1 RRSIF. |
-| S7 | [AEAT — SIF y VERI*FACTU](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html) | Portal oficial, novedades, documentación y FAQ del sistema. |
+| S7 | [AEAT — SIF y VERI*FACTU](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html) | Portal oficial. A 07-10-2026 muestra simultáneamente la nota con los plazos vigentes 2027 y la comunicación de Hacienda de 05-10-2026 sobre la **previsión** de aplazamiento hasta octubre de 2028. |
 | S8 | [AEAT — información técnica](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/informacion-tecnica.html) | Diseños de registro, WSDL, XSD, validaciones, hash, firma, QR, ejemplos de declaración responsable y portal de pruebas. |
 | S9 | [AEAT — FAQ hash](https://www3.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/huella-hash.html) | SHA-256, datos que participan y encadenamiento. |
 | S10 | [AEAT — FAQ sistemas VERI*FACTU](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/sistemas-verifactu.html) | Remisión en línea, contingencia y diferencia con sistema no verificable. |
@@ -71,6 +73,7 @@ La Orden HAC/1028/2026 fue publicada el **05-10-2026** y entró en vigor el **06
 | S17 | [AEAT — Nota informativa sobre la ampliación del plazo de adaptación](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/nota-informativa-ampliacion-plazo-adaptacion-facturacion.html) | Confirmación administrativa del aplazamiento a 01-01-2027 / 01-07-2027 y del periodo previo de pruebas. |
 | S18 | [Orden HAC/1028/2026, de 2 de octubre — BOE-A-2026-20587](https://www.boe.es/eli/es/o/2026/10/02/hac1028) | **Desarrollo técnico de la solución pública de facturación electrónica B2B.** Regula emisión e interconexión, autenticación/identificación/representación, comunicación de pagos, codificación única, interoperabilidad con plataformas privadas y activa el cómputo de los plazos del RD 238/2026. |
 | S19 | [AEAT — Solución Pública de Facturación Electrónica, noticia de 07-10-2026](https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/octubre/7/solucion-publica-facturacion-electronica.html) | **Calendario oficial resumido tras la Orden HAC/1028/2026:** 06-10-2027 (>8 M€), 06-10-2028 (resto y estados/pagos de personas jurídicas ≤8 M€) y 06-10-2029 (estados/pagos de personas físicas y entidades en atribución de rentas ≤8 M€). |
+| S20 | [Ministerio de Hacienda — Comunicación de 05-10-2026: previsión de modificación de los plazos RRSIF y convergencia con factura electrónica](https://www.hacienda.gob.es/sgt/gabsehacienda/nota-informativa-verifactu.pdf) | **Anuncio, no norma aprobada.** Prevé aplazar hasta octubre de 2028 las obligaciones pendientes del RD 1007/2023 para alinearlas con la factura electrónica de empresarios/profesionales ≤8 M€, y anuncia una futura convergencia técnica/normativa manteniendo sustancialmente las garantías esenciales del RRSIF. |
 
 ## Orden HAC/1028/2026: impacto específico en Verifactu-Web
 
@@ -101,11 +104,13 @@ La publicación de la Orden el **05-10-2026** y su entrada en vigor el **06-10-2
 
 ## Implicaciones generales para Verifactu-Web
 
-1. **El aplazamiento modifica el calendario, no los requisitos técnicos de VERI*FACTU.** La arquitectura debe seguir implementando el RRSIF, la Orden HAC/1177/2024 y las especificaciones publicadas por la AEAT.
-2. **La ventana adicional debe utilizarse para validación.** El objetivo del producto debe ser alcanzar preparación técnica y documental antes de las fechas obligatorias, dejando margen para pilotos y correcciones.
-3. **Separar VERI*FACTU de factura electrónica B2B.** Aunque ambos dominios se relacionan con la facturación, son obligaciones distintas y deben modelarse como capacidades separadas para evitar acoplamiento regulatorio.
-4. **Versionar el compliance.** Cada release fiscal debería registrar las versiones de XSD/WSDL, reglas de validación, algoritmos, formatos B2B y documentación oficial que soporta.
-5. **Mantener controles de producción durante los pilotos.** Integridad, trazabilidad, encadenamiento, QR, evidencias de auditoría y declaración responsable deben probarse antes de que llegue la obligatoriedad.
+1. **No tratar octubre de 2028 como fecha jurídicamente vigente todavía.** Debe aparecer en producto/roadmap como `announced / pending legislation` hasta que se publique la norma correspondiente.
+2. **Mantener la preparación para 2027 mientras no cambie la norma.** El producto no debe relajar su objetivo de conformidad RRSIF basándose sólo en una nota de prensa.
+3. **Preparar la arquitectura para la convergencia anunciada.** Conviene mantener desacoplados el núcleo RRSIF y el módulo B2B, pero con un modelo de factura común, identificadores correlacionables y adaptadores versionados para poder converger sin reescribir el dominio.
+4. **Preservar las garantías técnicas actuales.** Hacienda anuncia expresamente que integridad, conservación, accesibilidad, legibilidad, trazabilidad e inalterabilidad se mantendrán en términos sustancialmente equivalentes; no hay base para reducir estos controles.
+5. **Introducir estado regulatorio en la documentación.** Cada requisito debería etiquetarse como `vigente`, `anunciado`, `borrador` o `derogado/sustituido`, evitando mezclar previsiones políticas con obligaciones legales.
+6. **Vigilar ViDA.** La convergencia futura anunciada menciona expresamente los requisitos de reporte digital derivados de ViDA, por lo que conviene preservar extensibilidad para reporting transaccional adicional.
+
 
 ## Nota sobre documentación técnica
 
