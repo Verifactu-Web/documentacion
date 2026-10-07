@@ -13,24 +13,40 @@ Consultadas y verificadas a **7 de octubre de 2026**. Se enlaza siempre a la fue
 
 ## Calendario regulatorio vigente
 
-> **Importante:** los plazos de factura electrónica B2B empiezan a computarse desde la entrada en vigor de la Orden HAC/1028/2026, el **06-10-2026**. Por ello, las fechas que figuran a continuación sustituyen cualquier fecha estimada anterior basada en proyectos o borradores de la orden.
+> **Importante:** hay dos calendarios regulatorios distintos y no deben mezclarse:
+>
+> 1. **RRSIF / VERI*FACTU** (RD 1007/2023): fechas propias de adaptación del software de facturación.
+> 2. **Factura electrónica B2B** (Ley 18/2022 + RD 238/2026 + Orden HAC/1028/2026): sus plazos empiezan a computarse desde la entrada en vigor de la Orden HAC/1028/2026, el **06-10-2026**.
+>
+> La Orden HAC/1028/2026 **no modifica** las fechas de obligatoriedad del RRSIF/VERI*FACTU.
 
-| Ámbito / obligación | Sujetos | Fecha efectiva | Fuente |
+### RRSIF / VERI*FACTU
+
+| Obligación | Sujetos | Fecha límite / efectiva | Fuente |
 |---|---|---:|---|
-| RRSIF / VERI*FACTU | Contribuyentes del Impuesto sobre Sociedades incluidos en el art. 3.1 RRSIF | **01-01-2027** | S6, S7, S17 |
-| RRSIF / VERI*FACTU | Resto de obligados incluidos en el art. 3.1 RRSIF | **01-07-2027** | S6, S7, S17 |
-| Factura electrónica B2B: expedir, remitir y recibir; estados y pagos | Empresarios/profesionales con volumen de operaciones **> 8 M€** en el año natural anterior | **06-10-2027** | S16, S18, S19 |
-| Plataformas privadas: copia fiel, interconexión y requisitos para operar | Operadores de plataformas privadas de intercambio | **06-10-2027** | S16, S18 |
-| Factura electrónica B2B: expedir, remitir y recibir | Resto de empresarios y profesionales incluidos | **06-10-2028** | S16, S18, S19 |
-| Estados y pagos de factura B2B | Personas jurídicas con volumen de operaciones **≤ 8 M€** | **06-10-2028** | S16, S19 |
-| Estados y pagos de factura B2B | Personas físicas y entidades en régimen de atribución de rentas con volumen de operaciones **≤ 8 M€** | **06-10-2029** | S16, S19 |
-| Disponibilidad de la Solución Pública de Facturación Electrónica (SPFE) | AEAT | **Como máximo 06-08-2027** (al menos dos meses antes de la primera aplicación efectiva) | S18 |
+| Sistemas informáticos adaptados al RRSIF | Obligados del art. 3.1.a) del RD 1007/2023 (principalmente contribuyentes del Impuesto sobre Sociedades) | **Antes del 01-01-2027** | S3, S6, S7, S17 |
+| Sistemas informáticos operativos conforme al RRSIF | Resto de obligados del art. 3.1 del RD 1007/2023 | **Antes del 01-07-2027** | S3, S6, S7, S17 |
+
+### Factura electrónica B2B
+
+La Orden HAC/1028/2026 fue publicada el **05-10-2026** y entró en vigor el **06-10-2026**. Esa fecha inicia el cómputo de los plazos de la disposición final octava de la Ley 18/2022 y de las disposiciones transitorias primera a tercera y disposición final cuarta del RD 238/2026.
+
+| Obligación | Sujetos | Fecha efectiva | Base normativa |
+|---|---|---:|---|
+| Expedir, remitir y recibir factura electrónica B2B; informar estados y pagos exigibles | Empresarios/profesionales con volumen de operaciones **> 8 M€** en el año natural anterior | **06-10-2027** | Ley 18/2022 DF 8.ª; RD 238/2026 DF 4.1.a; S18, S19 |
+| Remisión de copia fiel a la SPFE, interoperabilidad/interconexión y requisitos para operar | Operadores de plataformas privadas de intercambio de facturas electrónicas | **06-10-2027** | RD 238/2026 DF 4.2 |
+| Expedir, remitir y recibir factura electrónica B2B | Resto de empresarios y profesionales incluidos en el ámbito del RD 238/2026 | **06-10-2028** | Ley 18/2022 DF 8.ª; RD 238/2026 DF 4.1.b; S18, S19 |
+| Informar estados de factura y pagos | Personas jurídicas con volumen de operaciones **≤ 8 M€** | **06-10-2028** | RD 238/2026 DF 4.1.b; S19 |
+| Adaptación del régimen FACeB2B al nuevo sistema | Subcontratistas obligados actualmente a utilizar FACeB2B | **Plazo máximo: 06-10-2028** | RD 238/2026 DT 1.ª |
+| Informar estados de factura y pagos | Personas físicas y entidades en régimen de atribución de rentas con volumen de operaciones **≤ 8 M€** | **06-10-2029** | RD 238/2026 DT 3.ª; S19 |
+| Disponibilidad de la Solución Pública de Facturación Electrónica (SPFE) | AEAT | **Al menos 2 meses antes de la primera aplicación efectiva**; con el calendario actual, no más tarde del **06-08-2027** | Orden HAC/1028/2026 DA 2.ª |
 
 ### Régimen transitorio B2B relevante
 
-- Durante los **12 meses posteriores al 06-10-2027**, los sujetos con volumen de operaciones superior a 8 M€ deberán acompañar la factura electrónica con un **PDF legible**, salvo aceptación voluntaria y expresa del destinatario para recibir únicamente el formato electrónico original.
-- Para personas físicas y entidades en régimen de atribución de rentas con volumen ≤ 8 M€, la comunicación de estados de factura permanece voluntaria hasta el **06-10-2029**.
-- La Orden HAC/1028/2026 entró en vigor el **06-10-2026** y esa fecha es la referencia jurídica para calcular los plazos anteriores.
+- Para los sujetos con volumen de operaciones **> 8 M€**, durante los **12 meses siguientes al 06-10-2027** las facturas electrónicas deberán acompañarse de un **PDF que asegure su legibilidad**, salvo aceptación voluntaria y expresa del destinatario para recibir únicamente el formato electrónico original. El PDF **no se remite a la SPFE**.
+- Para personas físicas y entidades en régimen de atribución de rentas con volumen de operaciones **≤ 8 M€**, la comunicación de estados de factura tiene carácter voluntario hasta el **06-10-2029**.
+- Los subcontratistas sujetos a FACeB2B disponen de un máximo de **24 meses desde el 06-10-2026** para adaptarse al nuevo sistema, es decir, hasta el **06-10-2028**.
+- La fecha de referencia para todos estos cómputos B2B es la **entrada en vigor de la Orden HAC/1028/2026 (06-10-2026)**, no su fecha de publicación.
 
 ## Fuentes
 
@@ -79,8 +95,8 @@ La publicación de la Orden el **05-10-2026** y su entrada en vigor el **06-10-2
 
 - **Fase 1 — 2026/primer semestre 2027:** completar y certificar internamente el núcleo RRSIF/VERI*FACTU.
 - **Fase 2 — en paralelo durante 2027:** implementar el bounded context de e-factura B2B, conversión/serialización UBL, estados y adaptador SPFE.
-- **Hito 06-10-2027:** soporte productivo B2B para clientes con volumen de operaciones superior a 8 millones de euros.
-- **Hito 06-10-2028:** soporte B2B general para el resto de empresarios y profesionales incluidos y estados/pagos obligatorios para personas jurídicas ≤8 M€.
+- **Hito 06-10-2027:** soporte productivo de factura electrónica B2B para sujetos >8 M€ y cumplimiento de las obligaciones que correspondan a plataformas privadas.
+- **Hito 06-10-2028:** soporte B2B para el resto de empresarios/profesionales, estados/pagos para personas jurídicas ≤8 M€ y finalización de la transición FACeB2B.
 - **Hito 06-10-2029:** estados/pagos obligatorios para personas físicas y entidades en régimen de atribución de rentas ≤8 M€.
 
 ## Implicaciones generales para Verifactu-Web
